@@ -12,12 +12,14 @@ class SoundBoard {
         this.soundBoard.style.padding = '40px 20px';
         
         this.soundClips = [];
+        this.audioContextUnlocked = false;
+        this.loaded = false;
         this.init();
     }
 
     async init() {
         await this.loadSoundClips();
-        this.loadSounds();
+        await this.loadSounds();
         this.createSoundButtons();
     }
 
@@ -31,13 +33,28 @@ class SoundBoard {
         }
     }
 
-    loadSounds() {
-        this.soundClips.forEach(clip => {
-            this.sounds[clip.name] = new Howl({
-                src: [clip.file],
-                loop: false
+    async loadSounds() {
+        const loadPromises = this.soundClips.map(clip => {
+            return new Promise((resolve, reject) => {
+                const sound = new Howl({
+                    src: [clip.file],
+                    loop: false,
+                    html5: true,
+                    preload: true,
+                    onload: resolve,
+                    onerror: reject
+                });
+                this.sounds[clip.name] = sound;
             });
         });
+
+        try {
+            await Promise.all(loadPromises);
+            this.loaded = true;
+            console.log('All sounds loaded successfully');
+        } catch (error) {
+            console.error('Error loading sounds:', error);
+        }
     }
 
     createSoundButtons() {
@@ -61,6 +78,11 @@ class SoundBoard {
     }
 
     handleClick(e, soundName) {
+        if (!this.audioContextUnlocked && Howler.ctx.state === 'suspended') {
+            Howler.ctx.resume();
+            this.audioContextUnlocked = true;
+        }
+
         const sound = this.sounds[soundName];
         const element = e.currentTarget;
 
