@@ -1,0 +1,7 @@
+{
+    "clips": [
+        { "name": "Hi", "file": "audio-clips/hi.wav" },
+        { "name": "Who Dis", "file": "audio-clips/who-dis.wav" },
+        { "name": "Its Still Real to me Dammnit", "file": "audio-clips/its-real-to-me-dammnit.wav" }
+    ]
+} 

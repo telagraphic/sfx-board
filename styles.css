@@ -1,0 +1,85 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: grid;
+    font-size: 24px;
+    margin-bottom: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+#soundBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #ffffff;
+}
+
+.sound-clip {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 3px solid #1a1a1a;
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.sound-clip:hover {
+    /* background: #8cb174; */
+    background: #cbb429;
+}
+
+.sound-clip.playing {
+    background: #69ad3c;
+}
+
+.sound-clip i {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.clip-name {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.loop-indicator {
+    display: none;
+    margin-left: 8px;
+}
+
+/* Additional modern touches */
+.sound-clip::before {
+    display: none;
+}
+
+.sound-clip.playing::before {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sound-clip {
+        min-height: 80px;
+        padding: 16px;
+    }
+
+    header {
+      padding: 20px;
+      font-size: 18px;
+    }
+}
