@@ -10,8 +10,6 @@ header {
     margin: 0 auto;
 }
 
-
-
 #soundBoard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -40,12 +38,28 @@ header {
 }
 
 .sound-clip:hover {
-    /* background: #8cb174; */
-    background: #cbb429;
+    transform: translateY(-2px);
 }
 
 .sound-clip.playing {
     background: #69ad3c;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease, color 0.4s ease;
+    
+
+    .clip-name {
+        animation: moveUp 0.5s ease-in-out;
+    }    
+}
+
+.sound-clip.finished {
+    background: #9bc480;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.4s ease;
+    
+    .clip-name {
+        animation: moveUp 0.5s ease-in-out;
+    }    
 }
 
 .sound-clip i {
@@ -81,5 +95,14 @@ header {
     header {
       padding: 20px;
       font-size: 18px;
+    }
+}
+
+@keyframes moveUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }

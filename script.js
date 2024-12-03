@@ -42,7 +42,17 @@ class SoundBoard {
                     html5: true,
                     preload: true,
                     onload: resolve,
-                    onerror: reject
+                    onerror: reject,
+                    onend: () => {
+                        if (!sound.loop()) {
+                            this.removePlayingStateForSound(sound);
+                            this.currentSound = null;
+                            this.addFinishedState(sound);
+                            setTimeout(() => {
+                                this.removeFinishedStateForSound(sound);
+                            }, 1000);
+                        }
+                    }
                 });
                 this.sounds[clip.name] = sound;
             });
@@ -86,14 +96,17 @@ class SoundBoard {
         const sound = this.sounds[soundName];
         const element = e.currentTarget;
 
-        // Stop current sound if playing
         if (this.currentSound && this.currentSound !== sound) {
             this.currentSound.stop();
             this.removePlayingState();
         }
 
+        element.classList.remove('finished');
+
         if (!sound.playing()) {
             sound.play();
+            this.removePlayingState();
+            this.removeFinishedState();
             element.classList.add('playing');
             this.currentSound = sound;
         } else {
@@ -115,6 +128,41 @@ class SoundBoard {
     removePlayingState() {
         const playingClips = document.querySelectorAll('.sound-clip.playing');
         playingClips.forEach(clip => clip.classList.remove('playing'));
+    }
+
+    removePlayingStateForSound(sound) {
+        const clips = document.querySelectorAll('.sound-clip');
+        clips.forEach(clip => {
+            const clipName = clip.querySelector('.clip-name').textContent;
+            if (this.sounds[clipName] === sound) {
+                clip.classList.remove('playing');
+            }
+        });
+    }
+
+    addFinishedState(sound) {
+        const clips = document.querySelectorAll('.sound-clip');
+        clips.forEach(clip => {
+            const clipName = clip.querySelector('.clip-name').textContent;
+            if (this.sounds[clipName] === sound) {
+                clip.classList.add('finished');
+            }
+        });
+    }
+
+    removeFinishedState() {
+        const finishedClips = document.querySelectorAll('.sound-clip.finished');
+        finishedClips.forEach(clip => clip.classList.remove('finished'));
+    }
+
+    removeFinishedStateForSound(sound) {
+        const clips = document.querySelectorAll('.sound-clip');
+        clips.forEach(clip => {
+            const clipName = clip.querySelector('.clip-name').textContent;
+            if (this.sounds[clipName] === sound) {
+                clip.classList.remove('finished');
+            }
+        });
     }
 }
 
