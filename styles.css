@@ -24,17 +24,18 @@ header {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
     border: 3px solid #1a1a1a;
-    border-radius: 16px;
-    padding: 24px;
+    border-radius: 1rem;
+    padding: 1.5rem;
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
-    min-height: 160px;
+    min-height: 5.5625rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
+    transition: background-color 0.125s ease;
 }
 
 .sound-clip:hover {
