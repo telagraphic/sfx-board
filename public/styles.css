@@ -53,6 +53,11 @@ header {
     }     */
 }
 
+.sound-clip.loading {
+    opacity: 0.7;
+    cursor: wait;
+}
+
 .sound-clip.finished {
     background-color: none;
     /* color: #000000; */
