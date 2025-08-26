@@ -6,18 +6,62 @@
     <title>Sound Effects Board</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Sound Effects Board</h1>
+        <button id="addSoundButton" class="add-sound-btn">
+            Add Sound
+        </button>
     </header>
     <main>
         <div class="sound-board" id="soundBoard">
             <!-- Sound clips will be added here dynamically -->
         </div>
     </main>
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Sound</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Tab Navigation -->
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="upload">Upload File</button>
+                    <button class="tab-btn" data-tab="youtube">YouTube URL</button>
+                </div>
+                
+                <!-- Upload File Tab -->
+                <div class="tab-content active" id="uploadTab">
+                    <div class="upload-area" id="uploadArea">
+                        <p>Drag & drop audio files here or click to browse</p>
+                        <input type="file" id="fileInput" accept="audio/*" multiple>
+                        <button class="browse-btn">Browse Files</button>
+                    </div>
+                    <div class="file-list" id="fileList"></div>
+                </div>
+                
+                <!-- YouTube URL Tab -->
+                <div class="tab-content" id="youtubeTab">
+                    <div class="youtube-input">
+                        <label for="youtubeUrl">YouTube URL:</label>
+                        <input type="url" id="youtubeUrl" placeholder="https://www.youtube.com/watch?v=...">
+                        <button id="downloadYoutube" class="download-btn">
+                            Download Audio
+                        </button>
+                    </div>
+                    <div class="youtube-status" id="youtubeStatus"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html> 
