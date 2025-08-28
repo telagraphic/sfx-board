@@ -23,3 +23,13 @@ For point 4:
 
 I want to host the final audio file on Bunny.net.
 When the trimmed audio file is saved, I will also need to delete the original audio file from the server.
+
+
+# TODO
+
+
+- refactor code to classes for soundboard, sound, ???
+- create another page for audio editing once it is possible
+- update server bun code?
+- use custom properties/tokens for the styles
+- create a nyc style theme

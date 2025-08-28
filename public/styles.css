@@ -54,7 +54,6 @@ header {
 
 .sound-clip.loading {
   opacity: 0.7;
-  cursor: wait;
 }
 
 .sound-clip.finished {
@@ -88,7 +87,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .sound-clip {
-    min-height: 80px;
+    min-height: 2rem;
     padding: 16px;
   }
 
@@ -446,6 +445,7 @@ header {
 /* Add Sound Button */
 .add-sound-btn {
   color: white;
+  text-decoration: none;
   border: none;
   padding: 1rem;
   border-radius: 8px;
@@ -461,4 +461,45 @@ header {
 .add-sound-btn:hover {
   background-color: #167f0f;
   color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Editor Page Styles */
+
+.editor-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.editor-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Back Button */
+.back-btn {
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.back-btn i {
+    font-size: 14px;
 }

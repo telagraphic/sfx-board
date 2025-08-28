@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Editor - Sound Effects Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Sound Editor</h1>
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Soundboard
+        </a>
+    </header>
+    
+    <main class="editor-main">
+        <div class="editor-container">
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="upload">Upload File</button>
+                <button class="tab-btn" data-tab="youtube">YouTube URL</button>
+            </div>
+            
+            <!-- Upload File Tab -->
+            <div class="tab-content active" id="uploadTab">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & drop audio files here or click to browse</p>
+                    <input type="file" id="fileInput" accept="audio/*" multiple>
+                    <button class="browse-btn">Browse Files</button>
+                </div>
+                <div class="file-list" id="fileList"></div>
+            </div>
+            
+            <!-- YouTube URL Tab -->
+            <div class="tab-content" id="youtubeTab">
+                <div class="youtube-input">
+                    <label for="youtubeUrl">YouTube URL:</label>
+                    <input type="url" id="youtubeUrl" placeholder="https://www.youtube.com/watch?v=...">
+                    <button id="downloadYoutube" class="download-btn">
+                        <i class="fas fa-download"></i> Download Audio
+                    </button>
+                </div>
+                <div class="youtube-status" id="youtubeStatus"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/SoundEditor.js" type="module"></script>
+</body>
+</html>
