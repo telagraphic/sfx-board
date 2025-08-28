@@ -8,6 +8,7 @@
     "typescript": "^5"
   },
   "scripts": {
-    "dev": "bun run src/server.js"
+    "dev": "bun run src/server.js",
+    "deploy": "bun run src/server.js"
   }
 }

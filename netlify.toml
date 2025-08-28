@@ -1,16 +1,9 @@
 [build]
-  command = "bun run build"  # or whatever your build command is
-  publish = "dist"           # or whatever your publish directory is
-
-[context.main]
-  command = "bun run build"
-  publish = "dist"
+  publish = "public"
+  # No build command needed for static files
 
 [context.stage]
-  command = "bun run build"
-  publish = "dist"
-  environment = { NODE_ENV = "staging" }
+  publish = "public"
 
-[context.deploy-preview]
-  command = "bun run build"
-  publish = "dist"
+[context.main]
+  publish = "public"
