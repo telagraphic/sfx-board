@@ -33,8 +33,24 @@
       "file": "audio-clips/please-clap.mp3"
     },
     {
+      "name": "R2Fart2 1",
+      "file": "audio-clips/r2fart2-mix-one.mp3"
+    },
+    {
+      "name": "R2Fart2 2",
+      "file": "audio-clips/r2fart2-mix-two.mp3"
+    },
+    {
+      "name": "R2Fart2 3",
+      "file": "audio-clips/r2fart2-mix-three.mp3"
+    },
+    {
       "name": "Who Dis",
       "file": "audio-clips/who-dis.mp3"
+    },
+    {
+      "name": "SFX Board Mixdonw",
+      "file": "audio-clips/sfx-board-mixdown.mp3"
     },
     {
       "name": "Its Still Real To Me Dammnit",
