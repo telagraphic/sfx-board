@@ -3,7 +3,7 @@ class SoundBoard {
     this.sounds = {};
     this.currentSound = null;
     this.soundBoard = document.getElementById("soundBoard");
-    this.soundClipsPath = "https://sfx-board.b-cdn.net/"
+    this.soundClipsPath = "https://sfx-board.b-cdn.net/";
 
     // Increase Howler's HTML5 audio pool size to handle more concurrent sounds
     Howler.html5PoolSize = 32;
@@ -14,7 +14,7 @@ class SoundBoard {
     this.soundBoard.style.gap = "24px";
     this.soundBoard.style.maxWidth = "1200px";
     this.soundBoard.style.margin = "0 auto";
-    this.soundBoard.style.padding = "40px 20px";
+    this.soundBoard.style.padding = "";
 
     this.soundClips = [];
     this.audioContextUnlocked = false;
@@ -70,11 +70,7 @@ class SoundBoard {
       soundClip.className = "sound-clip";
 
       soundClip.innerHTML = `
-                <i class="fas fa-waveform"></i>
                 <span class="clip-name">${clip.name}</span>
-                <span class="loop-indicator">
-                    <i class="fas fa-repeat"></i>
-                </span>
             `;
 
       soundClip.addEventListener("click", (e) =>
