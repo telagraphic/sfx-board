@@ -1,164 +1,192 @@
 {
-    "clips": [
-        {
-            "name": "Hi",
-            "file": "audio-clips/hi.mp3"
-        },
-        {
-            "name": "Who Dis",
-            "file": "audio-clips/who-dis.mp3"
-        },
-        {
-            "name": "Its Still Real To Me Dammnit",
-            "file": "audio-clips/its-real-to-me-dammnit.mp3"
-        },
-        {
-            "name": "Hadouken",
-            "file": "audio-clips/hadouken.mp3"
-        },
-        {
-            "name": "Keiser Fraud",
-            "file": "audio-clips/keiser-fraud.mp3"
-        },
-        {
-            "name": "Won Ton Soup",
-            "file": "audio-clips/won-ton-soup.mp3"
-        },
-        {
-            "name": "Im Real Okay",
-            "file": "audio-clips/im-real-okay.mp3"
-        },
-        {
-            "name": "What Dont You Get About It",
-            "file": "audio-clips/what-dont-you-get-about-it.mp3"
-        },
-        {
-            "name": "Dmx Prayer",
-            "file": "audio-clips/dmx-prayer.mp3"
-        },
-        {
-            "name": "Chicken Chow Mein",
-            "file": "audio-clips/chicken-chow-mein.mp3"
-        },
-        {
-            "name": "Give Me A Fuckin Answer",
-            "file": "audio-clips/give-me-a-fuckin-answer.mp3"
-        },
-        {
-            "name": "Oh My",
-            "file": "audio-clips/oh-my.mp3"
-        },
-        {
-            "name": "Dude",
-            "file": "audio-clips/dude.mp3"
-        },
-        {
-            "name": "Obama",
-            "file": "audio-clips/obama.mp3"
-        },
-        {
-            "name": "Sienfield Intro",
-            "file": "audio-clips/sienfield-intro.mp3"
-        },
-        {
-            "name": "Yeah",
-            "file": "audio-clips/yeah.mp3"
-        },
-        {
-            "name": "The Fuck Are You Doing",
-            "file": "audio-clips/the-fuck-are-you-doing.mp3"
-        },
-        {
-            "name": "Oh Good For You",
-            "file": "audio-clips/oh-good-for-you.mp3"
-        },
-        {
-            "name": "Hey Now",
-            "file": "audio-clips/hey-now.mp3"
-        },
-        {
-            "name": "Seinfield Da Da Dat",
-            "file": "audio-clips/seinfield-da-da-dat.mp3"
-        },
-        {
-            "name": "Gilbert Gottfried Laughs",
-            "file": "audio-clips/gilbert-gottfried-laughs.mp3"
-        },
-        {
-            "name": "Oh My God",
-            "file": "audio-clips/oh-my-god.mp3"
-        },
-        {
-            "name": "Gucci Tarrintino",
-            "file": "audio-clips/gucci-tarrintino.mp3"
-        },
-        {
-            "name": "Artie Laugh",
-            "file": "audio-clips/artie-laugh.mp3"
-        },
-        {
-            "name": "OH-FU",
-            "file": "audio-clips/oh-fu.mp3"
-        },
-        {
-            "name": "Winner Winner Chicken Dinner",
-            "file": "audio-clips/winner-winner-chicken- dinner.mp3"
-        },
-        {
-            "name": "Artie Alice Ambush Short",
-            "file": "audio-clips/artie-alice-ambush-short.mp3"
-        },
-        {
-            "name": "308100",
-            "file": "audio-clips/308100.mp3"
-        },
-        {
-            "name": "T O P L E S S",
-            "file": "audio-clips/t-o-p-l-e-s-s.mp3"
-        },
-        {
-            "name": "Goat Down",
-            "file": "audio-clips/goat-down.mp3"
-        },
-        {
-            "name": "Look Out",
-            "file": "audio-clips/look-out.mp3"
-        },
-        {
-            "name": "Gt Chandelier 2016",
-            "file": "audio-clips/gt-chandelier-2016.mp3"
-        },
-        {
-            "name": "Ack Ack",
-            "file": "audio-clips/ack-ack.mp3"
-        },
-        {
-            "name": "A Bwiglee Dah Ya Aga Wo Gay Yo",
-            "file": "audio-clips/a-bwiglee-dah-ya-aga-wo-gay-yo.mp3"
-        },
-        {
-            "name": "Ronnie Mixdown",
-            "file": "audio-clips/ronnie-mixdown.mp3"
-        },
-        {
-            "name": "Are You Stroking Your Cock",
-            "file": "audio-clips/are-you-stroking-your-cock.mp3"
-        },
-        {
-            "name": "Me",
-            "file": "audio-clips/me.mp3"
-        },
-        {
-            "name": "Topless",
-            "file": "audio-clips/topless.mp3"
-        },
-        {
-            "name": "He Does Not Get It",
-            "file": "audio-clips/he-does-not-get-it.mp3"
-        },
-        {
-            "name": "No",
-            "file": "audio-clips/no.mp3"
-        }
-    ]
+  "clips": [
+    {
+      "name": "Hi",
+      "file": "audio-clips/hi.mp3"
+    },
+    {
+      "name": "You Got Mail",
+      "file": "audio-clips/you-got-mail.mp3"
+    },
+    {
+      "name": "Hawking Megamix",
+      "file": "audio-clips/hawking-megamix.mp3"
+    },
+    {
+      "name": "Hawking Skateboard",
+      "file": "audio-clips/hawking-skateboard.mp3"
+    },
+    {
+      "name": "Hawking Touchdown",
+      "file": "audio-clips/hawking-touchdown.mp3"
+    },
+    {
+      "name": "Hawking Nascar",
+      "file": "audio-clips/hawking-nascar.mp3"
+    },
+    {
+      "name": "Hawking Wrestling",
+      "file": "audio-clips/hawking-wrestling.mp3"
+    },
+    {
+      "name": "Please Clap",
+      "file": "audio-clips/please-clap.mp3"
+    },
+    {
+      "name": "Who Dis",
+      "file": "audio-clips/who-dis.mp3"
+    },
+    {
+      "name": "Its Still Real To Me Dammnit",
+      "file": "audio-clips/its-real-to-me-dammnit.mp3"
+    },
+    {
+      "name": "Hadouken",
+      "file": "audio-clips/hadouken.mp3"
+    },
+    {
+      "name": "Keiser Fraud",
+      "file": "audio-clips/keiser-fraud.mp3"
+    },
+    {
+      "name": "Won Ton Soup",
+      "file": "audio-clips/won-ton-soup.mp3"
+    },
+    {
+      "name": "Im Real Okay",
+      "file": "audio-clips/im-real-okay.mp3"
+    },
+    {
+      "name": "What Dont You Get About It",
+      "file": "audio-clips/what-dont-you-get-about-it.mp3"
+    },
+    {
+      "name": "Dmx Prayer",
+      "file": "audio-clips/dmx-prayer.mp3"
+    },
+    {
+      "name": "Chicken Chow Mein",
+      "file": "audio-clips/chicken-chow-mein.mp3"
+    },
+    {
+      "name": "Give Me A Fuckin Answer",
+      "file": "audio-clips/give-me-a-fuckin-answer.mp3"
+    },
+    {
+      "name": "Oh My",
+      "file": "audio-clips/oh-my.mp3"
+    },
+    {
+      "name": "Dude",
+      "file": "audio-clips/dude.mp3"
+    },
+    {
+      "name": "Obama",
+      "file": "audio-clips/obama.mp3"
+    },
+    {
+      "name": "Sienfield Intro",
+      "file": "audio-clips/sienfield-intro.mp3"
+    },
+    {
+      "name": "Yeah",
+      "file": "audio-clips/yeah.mp3"
+    },
+    {
+      "name": "The Fuck Are You Doing",
+      "file": "audio-clips/the-fuck-are-you-doing.mp3"
+    },
+    {
+      "name": "Oh Good For You",
+      "file": "audio-clips/oh-good-for-you.mp3"
+    },
+    {
+      "name": "Hey Now",
+      "file": "audio-clips/hey-now.mp3"
+    },
+    {
+      "name": "Seinfield Da Da Dat",
+      "file": "audio-clips/seinfield-da-da-dat.mp3"
+    },
+    {
+      "name": "Gilbert Gottfried Laughs",
+      "file": "audio-clips/gilbert-gottfried-laughs.mp3"
+    },
+    {
+      "name": "Oh My God",
+      "file": "audio-clips/oh-my-god.mp3"
+    },
+    {
+      "name": "Gucci Tarrintino",
+      "file": "audio-clips/gucci-tarrintino.mp3"
+    },
+    {
+      "name": "Artie Laugh",
+      "file": "audio-clips/artie-laugh.mp3"
+    },
+    {
+      "name": "OH-FU",
+      "file": "audio-clips/oh-fu.mp3"
+    },
+    {
+      "name": "Winner Winner Chicken Dinner",
+      "file": "audio-clips/winner-winner-chicken- dinner.mp3"
+    },
+    {
+      "name": "Artie Alice Ambush Short",
+      "file": "audio-clips/artie-alice-ambush-short.mp3"
+    },
+    {
+      "name": "308100",
+      "file": "audio-clips/308100.mp3"
+    },
+    {
+      "name": "T O P L E S S",
+      "file": "audio-clips/t-o-p-l-e-s-s.mp3"
+    },
+    {
+      "name": "Goat Down",
+      "file": "audio-clips/goat-down.mp3"
+    },
+    {
+      "name": "Look Out",
+      "file": "audio-clips/look-out.mp3"
+    },
+    {
+      "name": "Gt Chandelier 2016",
+      "file": "audio-clips/gt-chandelier-2016.mp3"
+    },
+    {
+      "name": "Ack Ack",
+      "file": "audio-clips/ack-ack.mp3"
+    },
+    {
+      "name": "A Bwiglee Dah Ya Aga Wo Gay Yo",
+      "file": "audio-clips/a-bwiglee-dah-ya-aga-wo-gay-yo.mp3"
+    },
+    {
+      "name": "Ronnie Mixdown",
+      "file": "audio-clips/ronnie-mixdown.mp3"
+    },
+    {
+      "name": "Are You Stroking Your Cock",
+      "file": "audio-clips/are-you-stroking-your-cock.mp3"
+    },
+    {
+      "name": "Me",
+      "file": "audio-clips/me.mp3"
+    },
+    {
+      "name": "Topless",
+      "file": "audio-clips/topless.mp3"
+    },
+    {
+      "name": "He Does Not Get It",
+      "file": "audio-clips/he-does-not-get-it.mp3"
+    },
+    {
+      "name": "No",
+      "file": "audio-clips/no.mp3"
+    }
+  ]
 }
