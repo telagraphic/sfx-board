@@ -3,6 +3,10 @@ class SoundBoard {
     this.sounds = {};
     this.currentSound = null;
     this.soundBoard = document.getElementById("soundBoard");
+    this.soundClipsPath = "https://sfx-board.b-cdn.net/"
+
+    // Increase Howler's HTML5 audio pool size to handle more concurrent sounds
+    Howler.html5PoolSize = 32;
 
     this.soundBoard.style.display = "grid";
     this.soundBoard.style.gridTemplateColumns =
@@ -15,7 +19,6 @@ class SoundBoard {
     this.soundClips = [];
     this.audioContextUnlocked = false;
     this.loaded = false;
-    this.init();
   }
 
   async init() {
@@ -35,37 +38,30 @@ class SoundBoard {
   }
 
   async loadSounds() {
-    const loadPromises = this.soundClips.map((clip) => {
-      return new Promise((resolve, reject) => {
-        const sound = new Howl({
-          src: [clip.file],
-          loop: false,
-          html5: true,
-          preload: true,
-          onload: resolve,
-          onerror: reject,
-          onend: () => {
-            if (!sound.loop()) {
-              this.removePlayingStateForSound(sound);
-              this.currentSound = null;
-              this.addFinishedState(sound);
-              setTimeout(() => {
-                this.removeFinishedStateForSound(sound);
-              }, 1000);
-            }
-          },
-        });
-        this.sounds[clip.name] = sound;
+    // Create Howl instances without preloading to avoid exhausting the audio pool
+    // Sounds will be loaded lazily when first played
+    this.soundClips.forEach((clip) => {
+      const sound = new Howl({
+        src: [this.soundClipsPath + clip.file],
+        loop: false,
+        html5: true,
+        preload: false, // Lazy load - only load when first played
+        onend: () => {
+          if (!sound.loop()) {
+            this.removePlayingStateForSound(sound);
+            this.currentSound = null;
+            this.addFinishedState(sound);
+            setTimeout(() => {
+              this.removeFinishedStateForSound(sound);
+            }, 1000);
+          }
+        },
       });
+      this.sounds[clip.name] = sound;
     });
 
-    try {
-      await Promise.all(loadPromises);
-      this.loaded = true;
-      console.log("All sounds loaded successfully");
-    } catch (error) {
-      console.error("Error loading sounds:", error);
-    }
+    this.loaded = true;
+    console.log("Sound instances created (will load on demand)");
   }
 
   createSoundButtons() {
@@ -173,5 +169,6 @@ class SoundBoard {
 
 // Initialize the sound board when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  new SoundBoard();
+  const soundBoard = new SoundBoard();
+  soundBoard.init();
 });
