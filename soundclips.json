@@ -225,10 +225,7 @@
       "name": "The Parade",
       "file": "parade.mp3"
     },
-    {
-      "name": "Sir How Can We Reach You Please",
-      "file": "sir-how-can-we-reach-you-please.mp3"
-    },
+
     {
       "name": "That Is Literally Jesus Christ",
       "file": "that-is-literally-jesus-christ.mp3"
@@ -250,6 +247,10 @@
       "file": "enjoying-tradio.mp3"
     },
     {
+      "name": "Sir How Can We Reach You Please",
+      "file": "sir-how-can-we-reach-you-please.mp3"
+    },
+    {
       "name": "Hi Folks, Pleasant Tuesday",
       "file": "hi-folks-pleasant-tuesday.mp3"
     },
@@ -266,16 +267,16 @@
       "file": "what-was-your-third-item-please.mp3"
     },
     {
-      "name": "Yeah Tradio",
-      "file": "yeah-tradio.mp3"
-    },
-    {
       "name": "Yes Sir!",
       "file": "yes-sir..mp3"
     },
     {
       "name": "Yes!",
       "file": "yes.mp3"
+    },
+    {
+      "name": "Yeah Tradio",
+      "file": "yeah-tradio.mp3"
     }
   ]
 }
