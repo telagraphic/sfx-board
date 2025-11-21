@@ -195,6 +195,87 @@
     {
       "name": "No",
       "file": "no.mp3"
+    },
+
+    {
+      "name": "Ok, Thank You For The Call",
+      "file": "ok-thank-you-the-call.mp3"
+    },
+    {
+      "name": "What Kind of Parade",
+      "file": "parade-kind.mp3"
+    },
+    {
+      "name": "How Long Is The Parade",
+      "file": "parade-long.mp3"
+    },
+    {
+      "name": "What Is The Theme Of The Parade",
+      "file": "parade-theme.mp3"
+    },
+    {
+      "name": "When Is The Parade",
+      "file": "parade-when.mp3"
+    },
+    {
+      "name": "Who Is In The Parade ",
+      "file": "parade-who.mp3"
+    },
+    {
+      "name": "The Parade",
+      "file": "parade.mp3"
+    },
+    {
+      "name": "Sir How Can We Reach You Please",
+      "file": "sir-how-can-we-reach-you-please.mp3"
+    },
+    {
+      "name": "That Is Literally Jesus Christ",
+      "file": "that-is-literally-jesus-christ.mp3"
+    },
+    {
+      "name": "To The Cuca Culpa",
+      "file": "to-the-cuca-culpa.mp3"
+    },
+    {
+      "name": "Terrible Person Terrible Reporter",
+      "file": "trump-terrible-person-terrible-reporter.mp3"
+    },
+    {
+      "name": "Welcome To Tradio",
+      "file": "welcome-to-tradio.mp3"
+    },
+    {
+      "name": "Enjoying Tradio",
+      "file": "enjoying-tradio.mp3"
+    },
+    {
+      "name": "Hi Folks, Pleasant Tuesday",
+      "file": "hi-folks-pleasant-tuesday.mp3"
+    },
+    {
+      "name": "K!",
+      "file": "k!.mp3"
+    },
+    {
+      "name": "Ok!",
+      "file": "ok-1.mp3"
+    },
+    {
+      "name": "What Was Your Third Item Please",
+      "file": "what-was-your-third-item-please.mp3"
+    },
+    {
+      "name": "Yeah Tradio",
+      "file": "yeah-tradio.mp3"
+    },
+    {
+      "name": "Yes Sir!",
+      "file": "yes-sir..mp3"
+    },
+    {
+      "name": "Yes!",
+      "file": "yes.mp3"
     }
   ]
 }
